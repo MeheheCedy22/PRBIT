@@ -1,2 +1,2 @@
 # PRBIT
- Princípy bezpečnosti informačných technológií - 5.semesyer
+ Princípy bezpečnosti informačných technológií - 5.semester
