@@ -3,6 +3,7 @@
 % The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
 %Template version as of 6/27/2024
 
+\usepackage[slovak]{babel}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
@@ -13,11 +14,11 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Balík nástrojov Microsoft Sysinternals}
+\title{Balík nástrojov MS Sysinternals}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Marek Čederle}
 \IEEEauthorblockA{\textit{Fakulta informatiky a informačných technológií} \\
-\textit{Slovenská Technická Univerzita}\\
+\textit{Slovenská Technická Univerzita v Bratislave}\\
 Bratislava, Slovensko \\
 xcederlem@stuba.sk}
 }
@@ -25,30 +26,156 @@ xcederlem@stuba.sk}
 \maketitle
 
 \begin{abstract}
+TODO: WRITE AN ABSTRACT
 This document is a model and instructions for \LaTeX.
 This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
 or Math in Paper Title or Abstract.
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert.
+TODO: INSERT KEYWORDS, component, formatting, style, styling, insert.
 \end{IEEEkeywords}
 
 \section{Funkčný opis bezpečnostného nástroja}
-Lorem ipsum
+\subsection{Úvod do MS Sysinternals}
+% Stručná história a pozadie balíka MS Sysinternals. Účel a ciele nástrojov Sysinternals, so zameraním na monitorovanie, diagnostiku a riešenie problémov v systémoch Windows.
+
+Windows Sysinternals je webová stránka, ktorá ponúka technické zdroje a nástroje na správu, diagnostiku, riešenie problémov a monitorovanie prostredia Microsoft Windows. Pôvodne bola webová stránka Sysinternals (predtým známa ako ntinternals) vytvorená v roku 1996 a prevádzkovala ju spoločnosť Winternals Software LP[1] so sídlom v Austine v Texase. Založili ju softvéroví vývojári Bryce Cogswell a Mark Russinovich. 18. júla 2006 spoločnosť Winternals a jej aktíva kúpila spoločnosť Microsoft[3].
+
+Webová stránka obsahovala niekoľko freewarových nástrojov na správu a monitorovanie počítačov so systémom Microsoft Windows. Tento softvér teraz nájdete na adrese Microsoft. Spoločnosť predávala aj nástroje na obnovu dát a profesionálne edície svojich freewarových nástrojov.
+
+
+
+\subsection{Prehľad Vybraných Nástrojov}
+\subsubsection{Process Explorer}
+\begin{itemize}
+    \item Čo je Process Explorer?
+    \item Hlavné funkcie: monitorovanie systému, vizualizácia stromu procesov, analýza DLL, atď.
+\end{itemize}
+
+\subsubsection{AutoRuns}
+\begin{itemize}
+    \item Účel nástroja AutoRuns: správa programov spúšťaných pri štarte systému.
+    \item Kľúčové funkcie: identifikácia programov pri štarte, overenie podpísaných súborov, kontrola naplánovaných úloh.
+\end{itemize}
+
+\subsubsection{TCPView}
+\begin{itemize}
+    \item Úloha pri monitorovaní sieťovej aktivity.
+    \item Funkcie: zobrazenie sieťových pripojení, riešenie DNS, monitorovanie TCP/UDP prevádzky.
+\end{itemize}
+
+\subsubsection{Process Monitor}
+\begin{itemize}
+    \item Čo robí: monitorovanie súborového systému, registrov a procesov v reálnom čase.
+    \item Zaujímavé funkcie: filtrovanie udalostí, sledovanie systémových volaní, hľadanie neoprávnených zmien.
+\end{itemize}
+
+\subsection{Porovnanie s Inými Bezpečnostnými Nástrojmi}
+Ako sa nástroje Sysinternals porovnávajú s inými populárnymi bezpečnostnými balíkmi (napr. Process Hacker, Wireshark, GlassWire)? Výhody a nevýhody.
 
 \section{Požiadavky na inštaláciu a postup pri inštalácii}
-Lorem ipsum
+\subsection{Systémové Požiadavky}
+\begin{itemize}
+    \item Podporované operačné systémy.
+    \item Hardvérové požiadavky (ak nejaké sú).
+    \item Predpoklady (napr. používateľské oprávnenia, práva správcu).
+\end{itemize}
+
+\subsection{Inštalačný Proces}
+\subsubsection{Sťahovanie Nástrojov}
+\begin{itemize}
+    \item Kde sťahovať jednotlivé nástroje (oficiálna stránka Microsoftu Sysinternals).
+    \item Formáty súborov (ZIP, EXE, atď.) a veľkosť.
+\end{itemize}
+
+\subsubsection{Inštalácia/Spustenie}
+\begin{itemize}
+    \item Krok za krokom návod na spustenie a inštaláciu jednotlivých nástrojov.
+    \item Vysvetlenie samostatných nástrojov (netreba inštalovať, len spustiť).
+    \item Rozdiely medzi spúšťaním nástrojov lokálne a zo sieťového zdieľania.
+\end{itemize}
+
+\subsection{Konfigurácia po Inštalácii}
+\begin{itemize}
+    \item Úvodné nastavenia a konfigurácie pre jednotlivé nástroje.
+    \item Nastavenie prostredia pre monitorovanie a diagnostiku.
+\end{itemize}
 
 \section{Experimentovanie a overeniu základných funkcionalít bezpečnostného nástroja}
+\subsection{Príprava na Experimentovanie}
+\begin{itemize}
+    \item Prehľad\cite{LinodeWindows} testovacieho prostredia: verzia OS, virtuálny stroj (ak sa použil), základná konfigurácia.
+    \item Popis scenára alebo prípadu použitia: príklady scenárov pre testovanie každého nástroja.
+\end{itemize}
+
+\subsection{Experimenty s Konkrétnymi Nástrojmi}
+\subsubsection{Process Explorer}
+\begin{itemize}
+    \item Analýza bežiacich procesov a identifikácia anomálií.
+    \item Použitie vyhľadávacích funkcií na sledovanie konkrétnych súborov alebo procesov.
+    \item Experimentovanie s integráciou "VirusTotal".
+\end{itemize}
+
+\subsubsection{AutoRuns}
+\begin{itemize}
+    \item Zoznam všetkých programov a služieb spúšťaných pri štarte.
+    \item Povolenie/zablokovanie položiek a kontrola vplyvu na správanie systému.
+    \item Overovanie digitálnych podpisov spúšťacích položiek.
+\end{itemize}
+
+\subsubsection{TCPView}
+\begin{itemize}
+    \item Monitorovanie živých sieťových pripojení.
+    \item Identifikácia nezvyčajných vzdialených pripojení.
+    \item Analýza stavov pripojenia (napr. TIME\_WAIT, LISTENING).
+\end{itemize}
+
+\subsubsection{Process Monitor}
+\begin{itemize}
+    \item Filtrovanie konkrétnych registrov, súborového systému alebo sieťových udalostí.
+    \item Vytváranie filtrov udalostí na zachytenie cieľových aktivít.
+    \item Identifikácia zmien v registroch alebo súboroch počas inštalácií softvéru.
+\end{itemize}
 
 \section{Dokumentovanie experimentovania s nástrojom formou napríklad riadacich príkazov alebo obrazoviek alebo nastavení}
+\subsection{Podrobné Správy z Experimentov}
+\begin{itemize}
+    \item Screenshoty zobrazujúce kroky a výsledky každého experimentu.
+    \item Príklady príkazov alebo konfigurácií použitých v experimentoch.
+\end{itemize}
+
+\subsection{Analýza Záznamov a Výstupov}
+\begin{itemize}
+    \item Prezentácia záznamov alebo dát zhromaždených pomocou každého nástroja.
+    \item Ako interpretovať zhromaždené informácie.
+    \item Porovnanie očakávaných a pozorovaných výsledkov.
+\end{itemize}
+
+\subsection{Problémy, na ktoré sa Narazilo, a Riešenia}
+\begin{itemize}
+    \item Dokumentovanie akýchkoľvek problémov alebo chýb počas experimentov.
+    \item Kroky na vyriešenie problémov alebo úpravu nastavení.
+\end{itemize}
 
 \section{Hodnotenie bezpečnostného nástroja}
+\subsection{Účinnosť a Spoľahlivosť}
+Ako dobre si nástroje viedli vo vašich experimentoch? Zaznamenané silné stránky alebo slabiny.
 
-\section{Zoznam základných použitých prameňov}
+\subsection{Jednoduchosť Použitia a Užívateľské Rozhranie}
+Ako intuitívne sú rozhrania pre jednotlivé nástroje? Prístupnosť pre začiatočníkov a pokročilých používateľov.
 
-\section{Všetkému, čo považujete za dôležité}
+\subsection{Vplyv na Výkon}
+Vplyv spustenia nástrojov na výkon systému. Zaznamenané spomalenia alebo špičky vo využití zdrojov.
+
+\subsection{Bezpečnosť a Presnosť}
+Presnosť pri identifikácii procesov, sieťovej aktivity, programov pri štarte. Hodnotenie bezpečnostných funkcií.
+
+\subsection{Návrhy na Vylepšenie}
+\begin{itemize}
+    \item Odporúčané zmeny alebo doplnky pre budúce verzie.
+    \item Nápady na integráciu s inými nástrojmi alebo funkciami.
+\end{itemize}
 
 
 
@@ -232,22 +359,10 @@ Lorem ipsum
 % For papers published in translation journals, please give the English 
 % citation first, followed by the original foreign-language citation \cite{b6}.
 
-% \begin{thebibliography}{00}
-% \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-% \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-% \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-% \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-% \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-% \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-% \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-% \bibitem{b8} D. P. Kingma and M. Welling, ``Auto-encoding variational Bayes,'' 2013, arXiv:1312.6114. [Online]. Available: https://arxiv.org/abs/1312.6114
-% \bibitem{b9} S. Liu, ``Wi-Fi Energy Detection Testbed (12MTC),'' 2023, gitHub repository. [Online]. Available: https://github.com/liustone99/Wi-Fi-Energy-Detection-Testbed-12MTC
-% \bibitem{b10} ``Treatment episode data set: discharges (TEDS-D): concatenated, 2006 to 2009.'' U.S. Department of Health and Human Services, Substance Abuse and Mental Health Services Administration, Office of Applied Studies, August, 2013, DOI:10.3886/ICPSR30122.v2
-% \bibitem{b11} K. Eves and J. Valasek, ``Adaptive control for singularly perturbed systems examples,'' Code Ocean, Aug. 2023. [Online]. Available: https://codeocean.com/capsule/4989235/tree
-% \end{thebibliography}
 
-% \vspace{12pt}
-% \color{red}
-% IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+\pagebreak
+\bibliographystyle{IEEEtran}
+\bibliography{literatura}
+
 
 \end{document}
