@@ -11,13 +11,14 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{url}
+\usepackage{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
 \title{Balík nástrojov Microsoft Sysinternals}
 
-\author{\IEEEauthorblockN{1\textsuperscript{st} Marek Čederle}
+\author{\IEEEauthorblockN{Marek Čederle}
 \IEEEauthorblockA{\textit{Fakulta informatiky a informačných technológií} \\
 \textit{Slovenská Technická Univerzita v Bratislave}\\
 Bratislava, Slovensko \\
@@ -47,7 +48,7 @@ TODO: INSERT KEYWORDS, component, formatting, style, styling, insert.
 Windows Sysinternals je balík nástrojov, ktorý sa zameriava na správu, diagnostiku, riešenie problémov a monitorovanie operačného systému MS\footnote{Microsoft} Windows. Pôvodne Sysinternals bola webová stránka (predtým známa ako ntinternals) vytvorená v roku 1996 a prevádzkovala ju spoločnosť Winternals Software LP so sídlom v Austine v Texase. Založili ju softvéroví vývojári Bryce Cogswell a Mark Russinovich. 18. júla 2006 spoločnosť Winternals bola zakúpená spoločnosťou Microsoft.
 
 Webová stránka obsahovala niekoľko freewarových nástrojov na správu a monitorovanie počítačov s operačným systémom MS Windows. Spoločnosť predávala aj nástroje na obnovu dát a profesionálne edície svojich freewarových nástrojov.
-Aktálny zoznam nástrojov je zobrazený v ``Tabuľke č.~\ref{tab1}''.
+Aktuálny zoznam nástrojov je zobrazený v ``Tabuľke č.~\ref{tab1}''.
 
 \begin{table}[htbp]
     \caption{Zoznam nástrojov}
@@ -92,7 +93,9 @@ Pre účely tohto projektu som sa zameral iba na pár vybraných nástrojov z ba
 %     \item Čo je Process Explorer?
 %     \item Hlavné funkcie: monitorovanie systému, vizualizácia stromu procesov, analýza DLL, atď.
 % \end{itemize}
-Process explorer je nástroj, ktorý má veľmi podobné funkcionality ako klasický Task Manager\footnote{Správca úloh}, ktorý je vstavaný v každom operačnom systéme MS Windows už od verzie Windows NT 4.0. Vie zobraziť využite CPU\footnote{procesora} procesmi na danom systéme. Taktiež využitie operačnej pamäte jednotlivými procesmi, ich PID\footnote{Process ID} a popis. Jeho výhodou je, že je veľmi podrobný oproti jednoduchému Správcovi úloh. Zobrazuje procesy v tzv. stromovej štruktúre čo znamená, že je jednoducho vidieť, ktorý proces spustil iný proces. Po kliknutí na vybraný proces, program dokáže zobraziť vlákna\footnote{threads} daného procesu a dynamické knižnice\footnote{DLL - Dynamic-Link Library}, ktoré daný proces používa. Po otvorení vlastností jednotlivého procesu nám vyskočí okno, kde sú všetky podrobnosti, ktoré sa vôbec o procese v rámci operačného systému dajú získať. Nástroj obsahuje aj vyhľadávanie procesov, čo bola funckionalita, ktorú napríklad Task Manager získal až vo verzii Windows 11.
+Process explorer je nástroj, ktorý má veľmi podobné funkcionality ako klasický Task Manager\footnote{Správca úloh}, ktorý je vstavaný v každom operačnom systéme MS Windows už od verzie Windows NT 4.0. Vie zobraziť využite CPU\footnote{procesora} procesmi na danom systéme. Taktiež využitie operačnej pamäte jednotlivými procesmi, ich PID\footnote{Process ID} a popis. Jeho výhodou je, že je veľmi podrobný oproti jednoduchému Správcovi úloh, hlavne čo sa týka informácií ohľadom správy pamäte. Zobrazuje procesy v tzv. stromovej štruktúre čo znamená, že je jednoducho vidieť, ktorý proces spustil iný proces (resp. ktorý proces je rodičom Ďalších procesov). Po kliknutí na vybraný proces, program dokáže zobraziť vlákna\footnote{threads} daného procesu a dynamické knižnice\footnote{DLL --- Dynamic-Link Library}, ktoré daný proces používa. Po otvorení vlastností jednotlivého procesu nám vyskočí okno, kde sú všetky podrobnosti, ktoré sa vôbec o procese v rámci operačného systému dajú získať. Nástroj obsahuje aj vyhľadávanie procesov, čo bola funckionalita, ktorú napríklad Správca úloh získal až vo verzii Windows 11. Dalšou funkciou Process Explorera je aj možnosť zobraziť informácie o sieťových pripojeniach, ktoré daný proces vytvára. Taktiež dokáže zobraziť bezpečnostné politiky, ktoré boli aplikovaný na daný proces. V neposlednom rade tento nástroj vie poslať vzorku daného procesu (programu) na webovú stránku \href{https://www.virustotal.com/gui/home/upload}{VirusTotal.com} ktorá slúži na skenovanie potenciálne škodlivého softvéru\footnote{malware}. 
+
+% TODO: citovat niekde priamo aj tie zdroje
 
 \subsubsection{AutoRuns}
 \begin{itemize}
