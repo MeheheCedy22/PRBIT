@@ -10,11 +10,12 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{url}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Balík nástrojov MS Sysinternals}
+\title{Balík nástrojov Microsoft Sysinternals}
 
 \author{\IEEEauthorblockN{1\textsuperscript{st} Marek Čederle}
 \IEEEauthorblockA{\textit{Fakulta informatiky a informačných technológií} \\
@@ -36,22 +37,62 @@ or Math in Paper Title or Abstract.
 TODO: INSERT KEYWORDS, component, formatting, style, styling, insert.
 \end{IEEEkeywords}
 
+
+\nocite{*}
+
 \section{Funkčný opis bezpečnostného nástroja}
-\subsection{Úvod do MS Sysinternals}
+\subsection{Úvod do Microsoft Sysinternals}
 % Stručná história a pozadie balíka MS Sysinternals. Účel a ciele nástrojov Sysinternals, so zameraním na monitorovanie, diagnostiku a riešenie problémov v systémoch Windows.
 
-Windows Sysinternals je webová stránka, ktorá ponúka technické zdroje a nástroje na správu, diagnostiku, riešenie problémov a monitorovanie prostredia Microsoft Windows. Pôvodne bola webová stránka Sysinternals (predtým známa ako ntinternals) vytvorená v roku 1996 a prevádzkovala ju spoločnosť Winternals Software LP[1] so sídlom v Austine v Texase. Založili ju softvéroví vývojári Bryce Cogswell a Mark Russinovich. 18. júla 2006 spoločnosť Winternals a jej aktíva kúpila spoločnosť Microsoft[3].
+Windows Sysinternals je balík nástrojov, ktorý sa zameriava na správu, diagnostiku, riešenie problémov a monitorovanie operačného systému MS\footnote{Microsoft} Windows. Pôvodne Sysinternals bola webová stránka (predtým známa ako ntinternals) vytvorená v roku 1996 a prevádzkovala ju spoločnosť Winternals Software LP so sídlom v Austine v Texase. Založili ju softvéroví vývojári Bryce Cogswell a Mark Russinovich. 18. júla 2006 spoločnosť Winternals bola zakúpená spoločnosťou Microsoft.
 
-Webová stránka obsahovala niekoľko freewarových nástrojov na správu a monitorovanie počítačov so systémom Microsoft Windows. Tento softvér teraz nájdete na adrese Microsoft. Spoločnosť predávala aj nástroje na obnovu dát a profesionálne edície svojich freewarových nástrojov.
+Webová stránka obsahovala niekoľko freewarových nástrojov na správu a monitorovanie počítačov s operačným systémom MS Windows. Spoločnosť predávala aj nástroje na obnovu dát a profesionálne edície svojich freewarových nástrojov.
+Aktálny zoznam nástrojov je zobrazený v ``Tabuľke č.~\ref{tab1}''.
+
+\begin{table}[htbp]
+    \caption{Zoznam nástrojov}
+    \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    AccessChk & Junction & PsService \\ \hline
+    AccessEnum & LDMDump & PsShutdown \\ \hline
+    AdExplorer & ListDLLs & PsSuspend \\ \hline
+    AdInsight & LiveKd & PsTools \\ \hline
+    AdRestore & LoadOrder & RAMMap \\ \hline
+    Autologon & LogonSessions & RDCMan \\ \hline
+    \textbf{Autoruns} & MoveFile & RegDelNull \\ \hline
+    BgInfo & NotMyFault & RegHide \\ \hline
+    BlueScreen & NTFSInfo & RegJump \\ \hline
+    CacheSet & PendMoves & Registry Usage (RU) \\ \hline
+    ClockRes & PipeList & SDelete \\ \hline
+    Contig & PortMon & ShareEnum \\ \hline
+    Coreinfo & ProcDump & ShellRunas \\ \hline
+    Ctrl2Cap & \textbf{Process Explorer} & Sigcheck \\ \hline
+    DebugView & \textbf{Process Monitor} & Streams \\ \hline
+    Desktops & PsExec & Strings \\ \hline
+    Disk2vhd & PsFile & Sync \\ \hline
+    DiskExt & PsGetSid & Sysmon \\ \hline
+    DiskMon & PsInfo & \textbf{TCPView} \\ \hline
+    DiskView & PsKill & VMMap \\ \hline
+    Disk Usage (DU) & PsList & VolumeID \\ \hline
+    EFSDump & PsLoggedOn & WhoIs \\ \hline
+    FindLinks & PsLogList & WinObj \\ \hline
+    Handle & PsPasswd & ZoomIt \\ \hline
+    Hex2dec & PsPing & \\ \hline
+    \end{tabular}
+    \label{tab1}
+    \end{center}
+\end{table}
 
 
-
-\subsection{Prehľad Vybraných Nástrojov}
+\subsection{Prehľad vybraných nástrojov}
+Pre účely tohto projektu som sa zameral iba na pár vybraných nástrojov z balíku nástrojov Sysinternals, ktoré sú zamerané na bezpečnosť alebo majú uplatnenie v tejto oblasti. Je to predovšetkým kvôli tomu, že Sysinternals obsahuje nesmierne veľa rôznych nástrojov a bolo by to mimo rozsahu a zamerania tejto práce v predmete PRBIT\footnote{Princípy bezpečnosti v informačných technológiách}.
 \subsubsection{Process Explorer}
-\begin{itemize}
-    \item Čo je Process Explorer?
-    \item Hlavné funkcie: monitorovanie systému, vizualizácia stromu procesov, analýza DLL, atď.
-\end{itemize}
+% \begin{itemize}
+%     \item Čo je Process Explorer?
+%     \item Hlavné funkcie: monitorovanie systému, vizualizácia stromu procesov, analýza DLL, atď.
+% \end{itemize}
+Process explorer je nástroj, ktorý má veľmi podobné funkcionality ako klasický Task Manager\footnote{Správca úloh}, ktorý je vstavaný v každom operačnom systéme MS Windows už od verzie Windows NT 4.0. Vie zobraziť využite CPU\footnote{procesora} procesmi na danom systéme. Taktiež využitie operačnej pamäte jednotlivými procesmi, ich PID\footnote{Process ID} a popis. Jeho výhodou je, že je veľmi podrobný oproti jednoduchému Správcovi úloh. Zobrazuje procesy v tzv. stromovej štruktúre čo znamená, že je jednoducho vidieť, ktorý proces spustil iný proces. Po kliknutí na vybraný proces, program dokáže zobraziť vlákna\footnote{threads} daného procesu a dynamické knižnice\footnote{DLL - Dynamic-Link Library}, ktoré daný proces používa. Po otvorení vlastností jednotlivého procesu nám vyskočí okno, kde sú všetky podrobnosti, ktoré sa vôbec o procese v rámci operačného systému dajú získať. Nástroj obsahuje aj vyhľadávanie procesov, čo bola funckionalita, ktorú napríklad Task Manager získal až vo verzii Windows 11.
 
 \subsubsection{AutoRuns}
 \begin{itemize}
@@ -105,7 +146,7 @@ Ako sa nástroje Sysinternals porovnávajú s inými populárnymi bezpečnostný
 \section{Experimentovanie a overeniu základných funkcionalít bezpečnostného nástroja}
 \subsection{Príprava na Experimentovanie}
 \begin{itemize}
-    \item Prehľad\cite{LinodeWindows} testovacieho prostredia: verzia OS, virtuálny stroj (ak sa použil), základná konfigurácia.
+    \item Prehľad testovacieho prostredia: verzia OS, virtuálny stroj (ak sa použil), základná konfigurácia.
     \item Popis scenára alebo prípadu použitia: príklady scenárov pre testovanie každého nástroja.
 \end{itemize}
 
