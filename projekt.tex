@@ -85,6 +85,8 @@ Aktuálny zoznam nástrojov je zobrazený v Tabuľke č.~\ref{tab1}.
     \end{center}
 \end{table}
 
+TODO: add source of the table as caption here
+
 
 \subsection{Prehľad vybraných nástrojov}
 Pre účely tohto projektu som sa zameral iba na pár vybraných nástrojov z balíku nástrojov Sysinternals, ktoré sú zamerané na bezpečnosť alebo majú uplatnenie v tejto oblasti. Je to predovšetkým kvôli tomu, že Sysinternals obsahuje nesmierne veľa rôznych nástrojov a bolo by to mimo rozsahu a zamerania tejto práce v predmete PRBIT\footnote{Princípy bezpečnosti v informačných technológiách}.
@@ -93,15 +95,40 @@ Pre účely tohto projektu som sa zameral iba na pár vybraných nástrojov z ba
 %     \item Čo je Process Explorer?
 %     \item Hlavné funkcie: monitorovanie systému, vizualizácia stromu procesov, analýza DLL, atď.
 % \end{itemize}
-Process explorer je nástroj, ktorý má veľmi podobné funkcionality ako klasický Task Manager\footnote{Správca úloh}, ktorý je vstavaný v každom operačnom systéme MS Windows už od verzie Windows NT 4.0. Vie zobraziť využite CPU\footnote{procesora} procesmi na danom systéme. Taktiež využitie operačnej pamäte jednotlivými procesmi, ich PID\footnote{Process ID} a popis. Jeho výhodou je, že je veľmi podrobný oproti jednoduchému Správcovi úloh, hlavne čo sa týka informácií ohľadom správy pamäte. Zobrazuje procesy v tzv. stromovej štruktúre čo znamená, že je jednoducho vidieť, ktorý proces spustil iný proces (resp. ktorý proces je rodičom Ďalších procesov). Po kliknutí na vybraný proces, program dokáže zobraziť vlákna\footnote{threads} daného procesu a dynamické knižnice\footnote{DLL --- Dynamic-Link Library}, ktoré daný proces používa. Po otvorení vlastností jednotlivého procesu nám vyskočí okno, kde sú všetky podrobnosti, ktoré sa vôbec o procese v rámci operačného systému dajú získať. Nástroj obsahuje aj vyhľadávanie procesov, čo bola funckionalita, ktorú napríklad Správca úloh získal až vo verzii Windows 11. Dalšou funkciou Process Explorera je aj možnosť zobraziť informácie o sieťových pripojeniach, ktoré daný proces vytvára. Taktiež dokáže zobraziť bezpečnostné politiky, ktoré boli aplikovaný na daný proces. V neposlednom rade tento nástroj vie poslať vzorku daného procesu (programu) na webovú stránku \href{https://www.virustotal.com/gui/home/upload}{VirusTotal.com} ktorá slúži na skenovanie potenciálne škodlivého softvéru\footnote{malware}. 
+Process explorer je nástroj, ktorý má veľmi podobné funkcionality ako klasický Task Manager\footnote{Správca úloh}, ktorý je vstavaný v každom operačnom systéme MS Windows už od verzie Windows NT 4.0. Vie zobraziť využite CPU\footnote{procesora} procesmi na danom systéme. Taktiež využitie operačnej pamäte jednotlivými procesmi, ich PID\footnote{Process ID} a popis. Jeho výhodou je, že je veľmi podrobný oproti jednoduchému Správcovi úloh, hlavne čo sa týka informácií ohľadom správy pamäte. Zobrazuje procesy v tzv. stromovej štruktúre čo znamená, že je jednoducho vidieť, ktorý proces spustil iný proces (resp. ktorý proces je rodičom ďalších procesov). Po kliknutí na vybraný proces, program dokáže zobraziť vlákna\footnote{threads} daného procesu a dynamické knižnice\footnote{DLL --- Dynamic-Link Library}, ktoré daný proces používa. Po otvorení vlastností jednotlivého procesu nám vyskočí okno, kde sú všetky podrobnosti, ktoré sa vôbec o procese v rámci operačného systému dajú získať. Nástroj obsahuje aj vyhľadávanie procesov, čo bola funckionalita, ktorú napríklad Správca úloh získal až vo verzii Windows 11. Dalšou funkciou Process Explorera je aj možnosť zobraziť informácie o sieťových pripojeniach, ktoré daný proces vytvára. Taktiež dokáže zobraziť bezpečnostné politiky, ktoré boli aplikované na daný proces. V neposlednom rade tento nástroj vie poslať vzorku daného procesu (programu) na webovú stránku \href{https://www.virustotal.com/gui/home/upload}{VirusTotal.com} ktorá slúži na skenovanie potenciálne škodlivého softvéru\footnote{malware}. 
 
-% TODO: citovat niekde priamo aj tie zdroje
+TODO: citovat niekde priamo aj tie zdroje
 
 \subsubsection{AutoRuns}
+% \begin{itemize}
+%     \item Účel nástroja AutoRuns: správa programov spúšťaných pri štarte systému.
+%     \item Kľúčové funkcie: identifikácia programov pri štarte, overenie podpísaných súborov, kontrola naplánovaných úloh.
+% \end{itemize}
+Nástroj Autoruns slúži na správu programov, ktoré sa spúštajú pri štarte systému. Taktiež ako predošlý nástroj, aj Autoruns vie odoslať vzorky na webovú stránku \href{https://www.virustotal.com/gui/home/upload}{VirusTotal.com} aby overil signatúry programov, či sa náhodou nezhodujú so známymi škodlivými súbormi. Tento nástroj vie zobraziť veľa rôznych kategórií, ktoré označujú ako, kedy a akým spôsobom sa spúšta daný program pri štarte operačného systému. 
+Medzi ne patrí:
 \begin{itemize}
-    \item Účel nástroja AutoRuns: správa programov spúšťaných pri štarte systému.
-    \item Kľúčové funkcie: identifikácia programov pri štarte, overenie podpísaných súborov, kontrola naplánovaných úloh.
+    \item \textbf{Logon:} short and brief explainer
+    \item \textbf{Explorer:} short and brief explainer
+    \item \textbf{Internet Explorer:} short and brief explainer
+    \item \textbf{Scheduled Tasks:} short and brief explainer
+    \item \textbf{services:} short and brief explainer
+    \item \textbf{Drivers:} short and brief explainer
+    \item \textbf{Codecs:} short and brief explainer
+    \item \textbf{Boot Execute:} short and brief explainer
+    \item \textbf{Image Hijacks:} short and brief explainer
+    \item \textbf{AppInit:} short and brief explainer
+    \item \textbf{Known ListDLLs:} short and brief explainer
+    \item \textbf{Winlogon:} short and brief explainer
+    \item \textbf{Winsock Providers:} short and brief explainer
+    \item \textbf{Print Monitors:} short and brief explainer
+    \item \textbf{LSA Providers:} short and brief explainer
+    \item \textbf{Network Providers:} short and brief explainer
+    \item \textbf{WMI:} short and brief explainer
+    \item \textbf{Office:} short and brief explainer
 \end{itemize}
+
+
+
 
 \subsubsection{TCPView}
 \begin{itemize}
@@ -145,6 +172,8 @@ Ako sa nástroje Sysinternals porovnávajú s inými populárnymi bezpečnostný
     \item Úvodné nastavenia a konfigurácie pre jednotlivé nástroje.
     \item Nastavenie prostredia pre monitorovanie a diagnostiku.
 \end{itemize}
+
+TODO: pri experimentovani mozem napriklad nainstalovat legit clawPDF driver a vidiet ze sa zapise to autoruns ak odriver a flaguje ho ako unsecure pretoze nie je podpisanz MS certifikatom ale ak ho poslem na VirusTotal tak nebude flagnuty ziadnym z antivirusom
 
 \section{Experimentovanie a overeniu základných funkcionalít bezpečnostného nástroja}
 \subsection{Príprava na Experimentovanie}
