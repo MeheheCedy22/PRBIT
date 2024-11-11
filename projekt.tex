@@ -28,18 +28,19 @@ xcederlem@stuba.sk}
 \maketitle
 
 \begin{abstract}
-TODO: WRITE AN ABSTRACT
+TODO: WRITE AN ABSTRACT AT THE END
+
 This document is a model and instructions for \LaTeX.
 This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
 or Math in Paper Title or Abstract.
 \end{abstract}
 
 \begin{IEEEkeywords}
-TODO: INSERT KEYWORDS, component, formatting, style, styling, insert.
+TODO: INSERT KEYWORDS AT THE END
 \end{IEEEkeywords}
 
 
-\nocite{*}
+% \nocite{*}
 
 \section{Funkčný opis bezpečnostného nástroja}
 \subsection{Úvod do Microsoft Sysinternals}
@@ -47,8 +48,8 @@ TODO: INSERT KEYWORDS, component, formatting, style, styling, insert.
 
 Windows Sysinternals je balík nástrojov, ktorý sa zameriava na správu, diagnostiku, riešenie problémov a monitorovanie operačného systému MS\footnote{Microsoft} Windows. Pôvodne Sysinternals bola webová stránka (predtým známa ako ntinternals) vytvorená v roku 1996 a prevádzkovala ju spoločnosť Winternals Software LP so sídlom v Austine v Texase. Založili ju softvéroví vývojári Bryce Cogswell a Mark Russinovich. 18. júla 2006 spoločnosť Winternals bola zakúpená spoločnosťou Microsoft.
 
-Webová stránka obsahovala niekoľko freewarových nástrojov na správu a monitorovanie počítačov s operačným systémom MS Windows. Spoločnosť predávala aj nástroje na obnovu dát a profesionálne edície svojich freewarových nástrojov.
-Aktuálny zoznam nástrojov je zobrazený v Tabuľke č.~\ref{tab1}.
+Webová stránka obsahovala niekoľko freewarových nástrojov na správu a monitorovanie počítačov s operačným systémom MS Windows. Spoločnosť predávala aj nástroje na obnovu dát a profesionálne edície svojich freewarových nástrojov.\cite{enwiki:1248667707}
+Aktuálny zoznam nástrojov\cite{microsoft-sysinternals} je zobrazený v Tabuľke č.~\ref{tab1}.
 
 \begin{table}[htbp]
     \caption{Zoznam nástrojov}
@@ -85,8 +86,6 @@ Aktuálny zoznam nástrojov je zobrazený v Tabuľke č.~\ref{tab1}.
     \end{center}
 \end{table}
 
-TODO: add source of the table as caption here
-
 
 \subsection{Prehľad vybraných nástrojov}
 Pre účely tohto projektu som sa zameral iba na pár vybraných nástrojov z balíku nástrojov Sysinternals, ktoré sú zamerané na bezpečnosť alebo majú uplatnenie v tejto oblasti. Je to predovšetkým kvôli tomu, že Sysinternals obsahuje nesmierne veľa rôznych nástrojov a bolo by to mimo rozsahu a zamerania tejto práce v predmete PRBIT\footnote{Princípy bezpečnosti v informačných technológiách}.
@@ -95,16 +94,17 @@ Pre účely tohto projektu som sa zameral iba na pár vybraných nástrojov z ba
 %     \item Čo je Process Explorer?
 %     \item Hlavné funkcie: monitorovanie systému, vizualizácia stromu procesov, analýza DLL, atď.
 % \end{itemize}
-Process explorer je nástroj, ktorý má veľmi podobné funkcionality ako klasický Task Manager\footnote{Správca úloh}, ktorý je vstavaný v každom operačnom systéme MS Windows už od verzie Windows NT 4.0. Vie zobraziť využite CPU\footnote{procesora} procesmi na danom systéme. Taktiež využitie operačnej pamäte jednotlivými procesmi, ich PID\footnote{Process ID} a popis. Jeho výhodou je, že je veľmi podrobný oproti jednoduchému Správcovi úloh, hlavne čo sa týka informácií ohľadom správy pamäte. Zobrazuje procesy v tzv. stromovej štruktúre čo znamená, že je jednoducho vidieť, ktorý proces spustil iný proces (resp. ktorý proces je rodičom ďalších procesov). Po kliknutí na vybraný proces, program dokáže zobraziť vlákna\footnote{threads} daného procesu a dynamické knižnice\footnote{DLL --- Dynamic-Link Library}, ktoré daný proces používa. Po otvorení vlastností jednotlivého procesu nám vyskočí okno, kde sú všetky podrobnosti, ktoré sa vôbec o procese v rámci operačného systému dajú získať. Nástroj obsahuje aj vyhľadávanie procesov, čo bola funckionalita, ktorú napríklad Správca úloh získal až vo verzii Windows 11. Dalšou funkciou Process Explorera je aj možnosť zobraziť informácie o sieťových pripojeniach, ktoré daný proces vytvára. Taktiež dokáže zobraziť bezpečnostné politiky, ktoré boli aplikované na daný proces. V neposlednom rade tento nástroj vie poslať vzorku daného procesu (programu) na webovú stránku \href{https://www.virustotal.com/gui/home/upload}{VirusTotal.com} ktorá slúži na skenovanie potenciálne škodlivého softvéru\footnote{malware}. 
 
-TODO: citovat niekde priamo aj tie zdroje
+
+Process explorer je nástroj, ktorý má veľmi podobné funkcionality ako klasický Task Manager\footnote{Správca úloh}, ktorý je vstavaný v každom operačnom systéme MS Windows už od verzie Windows NT 4.0. Vie zobraziť využite CPU\footnote{procesora} procesmi na danom systéme. Taktiež využitie operačnej pamäte jednotlivými procesmi, ich PID\footnote{Process ID} a popis. Jeho výhodou je, že je veľmi podrobný oproti jednoduchému Správcovi úloh, hlavne čo sa týka informácií ohľadom správy pamäte. Niektorý ľudia ho nazývajú aj "Task Manager na steroidoch" alebo "Super Task Manager". Zobrazuje procesy v tzv. stromovej štruktúre čo znamená, že je jednoducho vidieť, ktorý proces spustil iný proces (resp. ktorý proces je rodičom ďalších procesov). Po kliknutí na vybraný proces, program dokáže zobraziť vlákna\footnote{threads} daného procesu a dynamické knižnice\footnote{DLL --- Dynamic-Link Library}, ktoré daný proces používa. Po otvorení vlastností jednotlivého procesu nám vyskočí okno, kde sú všetky podrobnosti, ktoré sa vôbec o procese v rámci operačného systému dajú získať. Nástroj obsahuje aj vyhľadávanie procesov, čo bola funckionalita, ktorú napríklad Správca úloh získal až vo verzii Windows 11. Dalšou funkciou Process Explorera je aj možnosť zobraziť informácie o sieťových pripojeniach, ktoré daný proces vytvára. Taktiež dokáže zobraziť bezpečnostné politiky, ktoré boli aplikované na daný proces. V neposlednom rade tento nástroj vie poslať vzorku daného procesu (programu) na webovú stránku \href{https://www.virustotal.com/gui/home/upload}{VirusTotal.com} ktorá slúži na skenovanie potenciálne škodlivého softvéru\footnote{malware}. Nástroj dokáže overiť signatúry ostatných spustených programov, t.z. či je daný program podpísaný oficiálnym certifikátom spoločnosti, ktorá ho vyvýja. Samozrejmosťou je spomenúť aj veľmi užitočnú funkciu nástroja, ktorú vieme vyvolať kliknutím na ikonu ''mieridla`` v hlavnom menu, ktorá pri klinutí na hociaké okno vie identifikovať proces, ktorému dané okno patrí, čo môže byť užitočné napríklad pri systéme, na ktorom sa nachádza Adware.
 
 \subsubsection{AutoRuns}
 % \begin{itemize}
 %     \item Účel nástroja AutoRuns: správa programov spúšťaných pri štarte systému.
 %     \item Kľúčové funkcie: identifikácia programov pri štarte, overenie podpísaných súborov, kontrola naplánovaných úloh.
 % \end{itemize}
-Nástroj Autoruns slúži na správu programov, ktoré sa spúštajú pri štarte systému. Taktiež ako predošlý nástroj, aj Autoruns vie odoslať vzorky na webovú stránku \href{https://www.virustotal.com/gui/home/upload}{VirusTotal.com} aby overil signatúry programov, či sa náhodou nezhodujú so známymi škodlivými súbormi. Tento nástroj vie zobraziť veľa rôznych kategórií, ktoré označujú ako, kedy a akým spôsobom sa spúšta daný program pri štarte operačného systému. 
+
+Nástroj Autoruns slúži na správu programov, ktoré sa spúštajú pri štarte systému. Taktiež ako predošlý nástroj, aj Autoruns vie odoslať vzorky na webovú stránku \href{https://www.virustotal.com/gui/home/upload}{VirusTotal.com} aby overil, či dané programy sú škodlivé a vie overiť aj signatúry programov. Tento nástroj vie zobraziť veľa rôznych kategórií, ktoré označujú ako, kedy a akým spôsobom sa spúšta daný program pri štarte operačného systému. 
 Medzi ne patrí:
 \begin{itemize}
     \item \textbf{Logon:} short and brief explainer
@@ -131,16 +131,30 @@ Medzi ne patrí:
 
 
 \subsubsection{TCPView}
-\begin{itemize}
-    \item Úloha pri monitorovaní sieťovej aktivity.
-    \item Funkcie: zobrazenie sieťových pripojení, riešenie DNS, monitorovanie TCP/UDP prevádzky.
-\end{itemize}
+% \begin{itemize}
+%     \item Úloha pri monitorovaní sieťovej aktivity.
+%     \item Funkcie: zobrazenie sieťových pripojení, riešenie DNS, monitorovanie TCP/UDP prevádzky.
+% \end{itemize}
+Nástroj TCPView slúži na monitorovanie sieťovej aktivity. Nie je to však tak komplexný nástroj ako napríklad Wireshark, ktorý vie zachytávať priamo packety a celú dieťovú komunikácia daného zariadenia, na ktorom je spustený. TCPView slúži skorej na zistenie, či nejaké procesy na pozadí sa nepripájajú na nežiadané IP adresy. Je skorej grafickým ekvivalentom pre program ``netstat'', ktorý je dostupný cez príkazový riadok\footnote{CLI --- Command Line Interface}.
+
+
 
 \subsubsection{Process Monitor}
-\begin{itemize}
-    \item Čo robí: monitorovanie súborového systému, registrov a procesov v reálnom čase.
-    \item Zaujímavé funkcie: filtrovanie udalostí, sledovanie systémových volaní, hľadanie neoprávnených zmien.
-\end{itemize}
+% \begin{itemize}
+%     \item Čo robí: monitorovanie súborového systému, registrov a procesov v reálnom čase.
+%     \item Zaujímavé funkcie: filtrovanie udalostí, sledovanie systémových volaní, hľadanie neoprávnených zmien.
+% \end{itemize}
+
+TODO: velmi powerful su filters, vie toho mega vela, dost podoben s process explorerom
+TODO: na roziel od process explorera, process monitor vie zachytit aj "short lived" procesy ako napr ked spustim v cmd ipconfig tak on hned zomire ale process monitor si to porste pameta a process explorer to nezachytit ak ma prilis vysoky refresh rate
+TODO: mark russinovich saying, when in doubt run procmon
+
+
+
+
+
+
+
 
 \subsection{Porovnanie s Inými Bezpečnostnými Nástrojmi}
 Ako sa nástroje Sysinternals porovnávajú s inými populárnymi bezpečnostnými balíkmi (napr. Process Hacker, Wireshark, GlassWire)? Výhody a nevýhody.
