@@ -3,7 +3,7 @@ Princípy bezpečnosti informačných technológií - 5.semester
 
 ## Info
 
-Pôvodne som začal písať v jazyku `LaTeX`, ale potom som objavil neskutočný jazyk [Typst](https://typst.app/) ([Github](https://github.com/typst/typst)), takže som celý projekt prerobil do neho. Majú super dokumentáciu, a templates, ktoré sú pod `MIT` licenciou.
+Pôvodne som začal písať v jazyku `LaTeX`, ale potom som objavil neskutočný jazyk [Typst](https://typst.app/) ([Github](https://github.com/typst/typst)), takže som časť napísanú v LaTeX-u prepísal do Typst-u a pokračoval písaním projektu v Typst-e. Majú super dokumentáciu, a templates, ktoré sú pod `MIT` licenciou.
 
 ## Téma
 
