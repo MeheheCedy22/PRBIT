@@ -1,0 +1,12 @@
+[conf]
+default-lang = "en"
+
+[lang.en]
+abstract = "Abstract"
+figure = "Figure"
+table = "Table"
+
+[lang.sk]
+abstract = "Abstrakt"
+figure = "Obrázok"
+table = "Tabuľka"
