@@ -21,6 +21,12 @@ Táto práca sa zaoberá analýzou a experimentovaním s bezpečnostnými nástr
 
 [Článok PDF](./projekt/version_Typst/main.pdf)
 
+#### Prezentácia
+
+***TBD***
+
+[Prezentácia PDF - ***TBD***]()
+
 ### Cvičenia
 
 Písal som ich v Markdown-e, pretože vtedy som ešte o Typst-e nevedel a bola to aj tak asi najjednoduchšia možnosť.
