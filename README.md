@@ -23,9 +23,7 @@ Táto práca sa zaoberá analýzou a experimentovaním s bezpečnostnými nástr
 
 #### Prezentácia
 
-***TBD***
-
-[Prezentácia PDF - ***TBD***]()
+[Prezentácia PDF](./projekt_prezentacia/main.pdf)
 
 ### Cvičenia
 
@@ -61,3 +59,5 @@ Písal som ich v Markdown-e, pretože vtedy som ešte o Typst-e nevedel a bola t
 - [Cvičenie 6 PDF](./cvicenia/6cviko/uloha6.pdf)
 - [Cvičenie 7 PDF](./cvicenia/7cviko/uloha7.pdf)
 - [Cvičenie 8 PDF](./cvicenia/8cviko/uloha8.pdf)
+
+> Na konci semestra bolo ešte jedno bonusové zadanie v [Kypo](https://crp.kypo.fiit.stuba.sk/). 
