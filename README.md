@@ -5,11 +5,9 @@ Princípy bezpečnosti informačných technológií - 5.semester
 
 ### Prednášky
 
-Prednášky sem uploadovať nebudem, ale sú dostupné na [stránke predmetu](http://www2.fiit.stuba.sk/~lastinec/prbit.html).
+Prednášky sú dostupné na [stránke predmetu](http://www2.fiit.stuba.sk/~lastinec/prbit.html).
 
 ### Projekt
-
-Pôvodne som začal písať v jazyku `LaTeX`, ale potom som objavil neskutočný jazyk [Typst](https://typst.app/) ([Github](https://github.com/typst/typst)), takže som časť napísanú v LaTeX-u prepísal do Typst-u a pokračoval písaním projektu v Typst-e. Majú super dokumentáciu, a templates, ktoré sú pod `MIT` licenciou.
 
 #### Téma
 
@@ -19,17 +17,15 @@ Pôvodne som začal písať v jazyku `LaTeX`, ale potom som objavil neskutočný
 
 Táto práca sa zaoberá analýzou a experimentovaním s bezpečnostnými nástrojmi z balíka Microsoft Sysinternals. Tento balík obsahuje široké spektrum nástrojov určených na správu, diagnostiku a monitorovanie operačného systému Microsoft Windows, s dôrazom na bezpečnosť. Práca sa sústredí na vybrané nástroje, konkrétne Process Explorer, Autoruns, TCPView a Process Monitor, pričom každý z nich bol použitý pri testovaný reálnych vzoriek malvéru. V rámci experimentov bola využitá cloudová virtuálna infraštruktúra pre zabezpečenie bezpečného prostredia na spúšťanie malvéru. Cieľom práce bolo demonštrovať funkcie týchto nástrojov pri detekcii a analýze škodlivých aktivít. Výsledky ukázali, že nástroje z balíka Sysinternals poskytujú robustné možnosti pre monitoring a analýzu systémových procesov a sú užitočným doplnkom v oblasti kybernetickej bezpečnosti.
 
-[Článok PDF](./projekt/version_Typst/main.pdf)
+[Článok PDF](./projekt/projekt/main.pdf)
 
 #### Prezentácia
 
-[Prezentácia PDF](./projekt_prezentacia/main.pdf)
+[Prezentácia PDF](./projekt/prezentacia/main.pdf)
 
 ### Cvičenia
 
-Písal som ich v Markdown-e, pretože vtedy som ešte o Typst-e nevedel a bola to aj tak asi najjednoduchšia možnosť.
-
-Študijné materiály a zadania priamo uploadovať tiež nebudem, ale sú dostupné na [stránke predmetu](http://www2.fiit.stuba.sk/~lastinec/prbit.html) s tým, že riešenia obsahujú screenshoty zadaní.
+Študijné materiály a zadania sú tiež dostupné na [stránke predmetu](http://www2.fiit.stuba.sk/~lastinec/prbit.html) s tým, že moje riešenia tu na GitHube obsahujú screenshoty zadaní.
 
 #### Reprty z cvičení
 
@@ -37,6 +33,8 @@ Písal som ich v Markdown-e, pretože vtedy som ešte o Typst-e nevedel a bola t
 > Cvičenie 9, 10 - Práca na úlohách vo [FIIT Kypo](https://crp.kypo.fiit.stuba.sk/) ([originál platforma](https://crp.kypo.muni.cz/))
 > 
 > Cvičenie 11, 12  - Prezentovanie projektov
+>
+> Na konci semestra bolo ešte jedno bonusové zadanie vo FIIT Kypo.
 
 ##### Markdown
 
@@ -59,5 +57,3 @@ Písal som ich v Markdown-e, pretože vtedy som ešte o Typst-e nevedel a bola t
 - [Cvičenie 6 PDF](./cvicenia/6cviko/uloha6.pdf)
 - [Cvičenie 7 PDF](./cvicenia/7cviko/uloha7.pdf)
 - [Cvičenie 8 PDF](./cvicenia/8cviko/uloha8.pdf)
-
-> Na konci semestra bolo ešte jedno bonusové zadanie v [Kypo](https://crp.kypo.fiit.stuba.sk/). 
