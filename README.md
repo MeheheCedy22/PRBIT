@@ -27,33 +27,17 @@ Táto práca sa zaoberá analýzou a experimentovaním s bezpečnostnými nástr
 
 Študijné materiály a zadania sú tiež dostupné na [stránke predmetu](http://www2.fiit.stuba.sk/~lastinec/prbit.html) s tým, že moje riešenia tu na GitHube obsahujú screenshoty zadaní.
 
-#### Reprty z cvičení
+#### Reprty z cvičení (MarkDown / PDF)
 
+- Cvičenie 1 ([MD](./cvicenia/1cviko/uloha1.md) / [PDF](./cvicenia/1cviko/uloha1.pdf))
+- Cvičenie 2 ([MD](./cvicenia/2cviko/uloha2.md) / [PDF](./cvicenia/2cviko/uloha2.pdf))
+- Cvičenie 3 ([MD](./cvicenia/3cviko/uloha3.md) / [PDF](./cvicenia/3cviko/uloha3.pdf))
+- Cvičenie 4 ([MD](./cvicenia/4cviko/uloha4.md) / [PDF](./cvicenia/4cviko/uloha4.pdf))
+- Cvičenie 5 ([MD](./cvicenia/5cviko/uloha5.md) / [PDF](./cvicenia/5cviko/uloha5.pdf))
+- Cvičenie 6 ([MD](./cvicenia/6cviko/uloha6.md) / [PDF](./cvicenia/6cviko/uloha6.pdf))
+- Cvičenie 7 ([MD](./cvicenia/7cviko/uloha7.md) / [PDF](./cvicenia/7cviko/uloha7.pdf))
+- Cvičenie 8 ([MD](./cvicenia/8cviko/uloha8.md) / [PDF](./cvicenia/8cviko/uloha8.pdf))
 
-> Cvičenie 9, 10 - Práca na úlohách vo [FIIT Kypo](https://crp.kypo.fiit.stuba.sk/) ([originál platforma](https://crp.kypo.muni.cz/))
-> 
-> Cvičenie 11, 12  - Prezentovanie projektov
->
-> Na konci semestra bolo ešte jedno bonusové zadanie vo FIIT Kypo.
-
-##### Markdown
-
-- [Cvičenie 1 MD](./cvicenia/1cviko/uloha1.md)
-- [Cvičenie 2 MD](./cvicenia/2cviko/uloha2.md)
-- [Cvičenie 3 MD](./cvicenia/3cviko/uloha3.md)
-- [Cvičenie 4 MD](./cvicenia/4cviko/uloha4.md)
-- [Cvičenie 5 MD](./cvicenia/5cviko/uloha5.md)
-- [Cvičenie 6 MD](./cvicenia/6cviko/uloha6.md)
-- [Cvičenie 7 MD](./cvicenia/7cviko/uloha7.md)
-- [Cvičenie 8 MD](./cvicenia/8cviko/uloha8.md)
-
-##### PDF
-
-- [Cvičenie 1 PDF](./cvicenia/1cviko/uloha1.pdf)
-- [Cvičenie 2 PDF](./cvicenia/2cviko/uloha2.pdf)
-- [Cvičenie 3 PDF](./cvicenia/3cviko/uloha3.pdf)
-- [Cvičenie 4 PDF](./cvicenia/4cviko/uloha4.pdf)
-- [Cvičenie 5 PDF](./cvicenia/5cviko/uloha5.pdf)
-- [Cvičenie 6 PDF](./cvicenia/6cviko/uloha6.pdf)
-- [Cvičenie 7 PDF](./cvicenia/7cviko/uloha7.pdf)
-- [Cvičenie 8 PDF](./cvicenia/8cviko/uloha8.pdf)
+- Cvičenie 9, 10 - Práca na úlohách vo [FIIT Kypo](https://crp.kypo.fiit.stuba.sk/) ([originál platforma](https://crp.kypo.muni.cz/))
+- Cvičenie 11, 12  - Prezentovanie projektov
+- Na konci semestra bolo ešte jedno bonusové zadanie vo FIIT Kypo.
